@@ -7,11 +7,20 @@
 //
 
 #import "C4WorkSpace.h"
+#import "ColorButton.h"
 
 @implementation C4WorkSpace
 
 -(void)setup {
-	//work your magic here
+    
+    UIColor *TColor = [UIColor yellowColor];
+    ColorButton *buttonOne = [[ColorButton alloc]initWithColor:TColor];
+    [self.canvas addShape:buttonOne.shape];
+    
+    
+    
+    
+    
 }
 					
 @end
