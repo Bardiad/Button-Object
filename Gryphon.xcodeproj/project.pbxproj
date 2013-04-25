@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		441F545F1728DC6B0012E61B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F545E1728DC6B0012E61B /* Accelerate.framework */; };
+		441F54611728DC6B0012E61B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54601728DC6B0012E61B /* AVFoundation.framework */; };
+		441F54631728DC6B0012E61B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54621728DC6B0012E61B /* CoreFoundation.framework */; };
+		441F54651728DC6B0012E61B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54641728DC6B0012E61B /* CoreGraphics.framework */; };
+		441F54671728DC6B0012E61B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54661728DC6B0012E61B /* CoreImage.framework */; };
+		441F54691728DC6B0012E61B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54681728DC6B0012E61B /* CoreMedia.framework */; };
+		441F546B1728DC6B0012E61B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F546A1728DC6B0012E61B /* CoreText.framework */; };
+		441F546D1728DC6B0012E61B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F546C1728DC6B0012E61B /* Foundation.framework */; };
+		441F546F1728DC6B0012E61B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F546E1728DC6B0012E61B /* OpenGLES.framework */; };
+		441F54711728DC6B0012E61B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54701728DC6B0012E61B /* QuartzCore.framework */; };
+		441F54731728DC6B0012E61B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54721728DC6B0012E61B /* UIKit.framework */; };
+		441F54791728DC6B0012E61B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 441F54771728DC6B0012E61B /* InfoPlist.strings */; };
+		441F547B1728DC6B0012E61B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F547A1728DC6B0012E61B /* main.m */; };
+		441F54801728DC6B0012E61B /* C4AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F547F1728DC6B0012E61B /* C4AppDelegate.m */; };
+		441F54821728DC6B0012E61B /* C4WorkSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F54811728DC6B0012E61B /* C4WorkSpace.m */; };
+		441F54A81728DC6C0012E61B /* libC4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54A71728DC6C0012E61B /* libC4.a */; };
+		441F54AB1728DC6C0012E61B /* C4Loop.aif in Resources */ = {isa = PBXBuildFile; fileRef = 441F54AA1728DC6C0012E61B /* C4Loop.aif */; };
+		441F54AD1728DC6C0012E61B /* C4Sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54AC1728DC6C0012E61B /* C4Sky.png */; };
+		441F54AF1728DC6C0012E61B /* C4Table.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54AE1728DC6C0012E61B /* C4Table.png */; };
+		441F54B11728DC6D0012E61B /* inception.mov in Resources */ = {isa = PBXBuildFile; fileRef = 441F54B01728DC6D0012E61B /* inception.mov */; };
+		441F54B41728DC6D0012E61B /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54B31728DC6D0012E61B /* iTunesArtwork.png */; };
+		441F54B71728DC6D0012E61B /* C4Canvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441F54B51728DC6D0012E61B /* C4Canvas.xib */; };
+		441F54B91728DC6D0012E61B /* C4_AppIcon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54B81728DC6D0012E61B /* C4_AppIcon_iPad.png */; };
+		441F54BB1728DC6D0012E61B /* C4_AppIcon_iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54BA1728DC6D0012E61B /* C4_AppIcon_iPad@2x.png */; };
+		441F54BD1728DC6D0012E61B /* C4_AppStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54BC1728DC6D0012E61B /* C4_AppStoreIcon.png */; };
+		441F54BF1728DC6D0012E61B /* C4_AppStoreIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54BE1728DC6D0012E61B /* C4_AppStoreIcon@2x.png */; };
+		441F54C11728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54C01728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape.png */; };
+		441F54C31728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54C21728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape@2x.png */; };
+		441F54C51728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54C41728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait.png */; };
+		441F54C71728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54C61728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait@2x.png */; };
+		441F54C91728DC6D0012E61B /* C4_SpotlightIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54C81728DC6D0012E61B /* C4_SpotlightIcon.png */; };
+		441F54CB1728DC6D0012E61B /* C4_SpotlightIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54CA1728DC6D0012E61B /* C4_SpotlightIcon@2x.png */; };
+		441F54CD1728DC6D0012E61B /* C4_SpotlightIcon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54CC1728DC6D0012E61B /* C4_SpotlightIcon_iPad.png */; };
+		441F54CF1728DC6D0012E61B /* C4_SpotlightIcon_iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54CE1728DC6D0012E61B /* C4_SpotlightIcon_iPad@2x.png */; };
+		441F54D11728DC6D0012E61B /* C4_TabbarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54D01728DC6D0012E61B /* C4_TabbarIcon.png */; };
+		441F54D31728DC6D0012E61B /* C4_TabbarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54D21728DC6D0012E61B /* C4_TabbarIcon@2x.png */; };
+		441F54D51728DC6D0012E61B /* C4_ToolbarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54D41728DC6D0012E61B /* C4_ToolbarIcon.png */; };
+		441F54D71728DC6D0012E61B /* C4_ToolbarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F54D61728DC6D0012E61B /* C4_ToolbarIcon@2x.png */; };
+		441F54DF1728DC6D0012E61B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54DE1728DC6D0012E61B /* SenTestingKit.framework */; };
+		441F54E01728DC6D0012E61B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54721728DC6B0012E61B /* UIKit.framework */; };
+		441F54E11728DC6D0012E61B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F546C1728DC6B0012E61B /* Foundation.framework */; };
+		441F54E91728DC6D0012E61B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 441F54E71728DC6D0012E61B /* InfoPlist.strings */; };
+		441F54EC1728DC6D0012E61B /* GryphonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F54EB1728DC6D0012E61B /* GryphonTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		441F54E21728DC6D0012E61B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441F54531728DC6B0012E61B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 441F545A1728DC6B0012E61B;
+			remoteInfo = Gryphon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		441F545B1728DC6B0012E61B /* Gryphon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gryphon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		441F545E1728DC6B0012E61B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		441F54601728DC6B0012E61B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		441F54621728DC6B0012E61B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		441F54641728DC6B0012E61B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		441F54661728DC6B0012E61B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		441F54681728DC6B0012E61B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		441F546A1728DC6B0012E61B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		441F546C1728DC6B0012E61B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		441F546E1728DC6B0012E61B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		441F54701728DC6B0012E61B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		441F54721728DC6B0012E61B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		441F54761728DC6B0012E61B /* Gryphon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gryphon-Info.plist"; sourceTree = "<group>"; };
+		441F54781728DC6B0012E61B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		441F547A1728DC6B0012E61B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		441F547C1728DC6B0012E61B /* Gryphon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gryphon-Prefix.pch"; sourceTree = "<group>"; };
+		441F547D1728DC6B0012E61B /* C4WorkSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C4WorkSpace.h; sourceTree = "<group>"; };
+		441F547E1728DC6B0012E61B /* C4AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C4AppDelegate.h; sourceTree = "<group>"; };
+		441F547F1728DC6B0012E61B /* C4AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C4AppDelegate.m; sourceTree = "<group>"; };
+		441F54811728DC6B0012E61B /* C4WorkSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C4WorkSpace.m; sourceTree = "<group>"; };
+		441F54841728DC6C0012E61B /* C4AddSubview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AddSubview.h; path = Headers/C4AddSubview.h; sourceTree = "<group>"; };
+		441F54851728DC6C0012E61B /* C4AssertionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AssertionHandler.h; path = Headers/C4AssertionHandler.h; sourceTree = "<group>"; };
+		441F54861728DC6C0012E61B /* C4Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Camera.h; path = Headers/C4Camera.h; sourceTree = "<group>"; };
+		441F54871728DC6C0012E61B /* C4CameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CameraController.h; path = Headers/C4CameraController.h; sourceTree = "<group>"; };
+		441F54881728DC6C0012E61B /* C4CanvasController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CanvasController.h; path = Headers/C4CanvasController.h; sourceTree = "<group>"; };
+		441F54891728DC6C0012E61B /* C4CaptureVideoPreviewLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CaptureVideoPreviewLayer.h; path = Headers/C4CaptureVideoPreviewLayer.h; sourceTree = "<group>"; };
+		441F548A1728DC6C0012E61B /* C4Control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Control.h; path = Headers/C4Control.h; sourceTree = "<group>"; };
+		441F548B1728DC6C0012E61B /* C4Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Defines.h; path = Headers/C4Defines.h; sourceTree = "<group>"; };
+		441F548C1728DC6C0012E61B /* C4EAGLES1Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLES1Renderer.h; path = Headers/C4EAGLES1Renderer.h; sourceTree = "<group>"; };
+		441F548D1728DC6C0012E61B /* C4EAGLESRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLESRenderer.h; path = Headers/C4EAGLESRenderer.h; sourceTree = "<group>"; };
+		441F548E1728DC6C0012E61B /* C4EAGLLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLLayer.h; path = Headers/C4EAGLLayer.h; sourceTree = "<group>"; };
+		441F548F1728DC6C0012E61B /* C4Font.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Font.h; path = Headers/C4Font.h; sourceTree = "<group>"; };
+		441F54901728DC6C0012E61B /* C4Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Foundation.h; path = Headers/C4Foundation.h; sourceTree = "<group>"; };
+		441F54911728DC6C0012E61B /* C4Gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Gesture.h; path = Headers/C4Gesture.h; sourceTree = "<group>"; };
+		441F54921728DC6C0012E61B /* C4GL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4GL.h; path = Headers/C4GL.h; sourceTree = "<group>"; };
+		441F54931728DC6C0012E61B /* C4GL1Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4GL1Renderer.h; path = Headers/C4GL1Renderer.h; sourceTree = "<group>"; };
+		441F54941728DC6C0012E61B /* C4Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Image.h; path = Headers/C4Image.h; sourceTree = "<group>"; };
+		441F54951728DC6C0012E61B /* C4Label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Label.h; path = Headers/C4Label.h; sourceTree = "<group>"; };
+		441F54961728DC6C0012E61B /* C4Layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Layer.h; path = Headers/C4Layer.h; sourceTree = "<group>"; };
+		441F54971728DC6C0012E61B /* C4LayerAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4LayerAnimation.h; path = Headers/C4LayerAnimation.h; sourceTree = "<group>"; };
+		441F54981728DC6C0012E61B /* C4Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Math.h; path = Headers/C4Math.h; sourceTree = "<group>"; };
+		441F54991728DC6C0012E61B /* C4MethodDelay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4MethodDelay.h; path = Headers/C4MethodDelay.h; sourceTree = "<group>"; };
+		441F549A1728DC6C0012E61B /* C4Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Movie.h; path = Headers/C4Movie.h; sourceTree = "<group>"; };
+		441F549B1728DC6C0012E61B /* C4Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Notification.h; path = Headers/C4Notification.h; sourceTree = "<group>"; };
+		441F549C1728DC6C0012E61B /* C4Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Object.h; path = Headers/C4Object.h; sourceTree = "<group>"; };
+		441F549D1728DC6C0012E61B /* C4PlayerLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4PlayerLayer.h; path = Headers/C4PlayerLayer.h; sourceTree = "<group>"; };
+		441F549E1728DC6C0012E61B /* C4Sample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Sample.h; path = Headers/C4Sample.h; sourceTree = "<group>"; };
+		441F549F1728DC6C0012E61B /* C4Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Shape.h; path = Headers/C4Shape.h; sourceTree = "<group>"; };
+		441F54A01728DC6C0012E61B /* C4ShapeLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4ShapeLayer.h; path = Headers/C4ShapeLayer.h; sourceTree = "<group>"; };
+		441F54A11728DC6C0012E61B /* C4Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Timer.h; path = Headers/C4Timer.h; sourceTree = "<group>"; };
+		441F54A21728DC6C0012E61B /* C4Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Vector.h; path = Headers/C4Vector.h; sourceTree = "<group>"; };
+		441F54A31728DC6C0012E61B /* C4View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4View.h; path = Headers/C4View.h; sourceTree = "<group>"; };
+		441F54A41728DC6C0012E61B /* C4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4ViewController.h; path = Headers/C4ViewController.h; sourceTree = "<group>"; };
+		441F54A51728DC6C0012E61B /* C4Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Window.h; path = Headers/C4Window.h; sourceTree = "<group>"; };
+		441F54A61728DC6C0012E61B /* UITouch+C4Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITouch+C4Touch.h"; path = "Headers/UITouch+C4Touch.h"; sourceTree = "<group>"; };
+		441F54A71728DC6C0012E61B /* libC4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libC4.a; path = Library/libC4.a; sourceTree = "<group>"; };
+		441F54AA1728DC6C0012E61B /* C4Loop.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = C4Loop.aif; path = Media/C4Loop.aif; sourceTree = "<group>"; };
+		441F54AC1728DC6C0012E61B /* C4Sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4Sky.png; path = Media/C4Sky.png; sourceTree = "<group>"; };
+		441F54AE1728DC6C0012E61B /* C4Table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4Table.png; path = Media/C4Table.png; sourceTree = "<group>"; };
+		441F54B01728DC6D0012E61B /* inception.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = inception.mov; path = Media/inception.mov; sourceTree = "<group>"; };
+		441F54B31728DC6D0012E61B /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Logos/iTunesArtwork.png; sourceTree = "<group>"; };
+		441F54B61728DC6D0012E61B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/C4Canvas.xib; sourceTree = "<group>"; };
+		441F54B81728DC6D0012E61B /* C4_AppIcon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4_AppIcon_iPad.png; path = Logos/C4_AppIcon_iPad.png; sourceTree = "<group>"; };
+		441F54BA1728DC6D0012E61B /* C4_AppIcon_iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_AppIcon_iPad@2x.png"; path = "Logos/C4_AppIcon_iPad@2x.png"; sourceTree = "<group>"; };
+		441F54BC1728DC6D0012E61B /* C4_AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4_AppStoreIcon.png; path = Logos/C4_AppStoreIcon.png; sourceTree = "<group>"; };
+		441F54BE1728DC6D0012E61B /* C4_AppStoreIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_AppStoreIcon@2x.png"; path = "Logos/C4_AppStoreIcon@2x.png"; sourceTree = "<group>"; };
+		441F54C01728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_LaunchImage_iPad-Landscape.png"; path = "Logos/C4_LaunchImage_iPad-Landscape.png"; sourceTree = "<group>"; };
+		441F54C21728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_LaunchImage_iPad-Landscape@2x.png"; path = "Logos/C4_LaunchImage_iPad-Landscape@2x.png"; sourceTree = "<group>"; };
+		441F54C41728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_LaunchImage_iPad-Portrait.png"; path = "Logos/C4_LaunchImage_iPad-Portrait.png"; sourceTree = "<group>"; };
+		441F54C61728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_LaunchImage_iPad-Portrait@2x.png"; path = "Logos/C4_LaunchImage_iPad-Portrait@2x.png"; sourceTree = "<group>"; };
+		441F54C81728DC6D0012E61B /* C4_SpotlightIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4_SpotlightIcon.png; path = Logos/C4_SpotlightIcon.png; sourceTree = "<group>"; };
+		441F54CA1728DC6D0012E61B /* C4_SpotlightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_SpotlightIcon@2x.png"; path = "Logos/C4_SpotlightIcon@2x.png"; sourceTree = "<group>"; };
+		441F54CC1728DC6D0012E61B /* C4_SpotlightIcon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4_SpotlightIcon_iPad.png; path = Logos/C4_SpotlightIcon_iPad.png; sourceTree = "<group>"; };
+		441F54CE1728DC6D0012E61B /* C4_SpotlightIcon_iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_SpotlightIcon_iPad@2x.png"; path = "Logos/C4_SpotlightIcon_iPad@2x.png"; sourceTree = "<group>"; };
+		441F54D01728DC6D0012E61B /* C4_TabbarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4_TabbarIcon.png; path = Logos/C4_TabbarIcon.png; sourceTree = "<group>"; };
+		441F54D21728DC6D0012E61B /* C4_TabbarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_TabbarIcon@2x.png"; path = "Logos/C4_TabbarIcon@2x.png"; sourceTree = "<group>"; };
+		441F54D41728DC6D0012E61B /* C4_ToolbarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C4_ToolbarIcon.png; path = Logos/C4_ToolbarIcon.png; sourceTree = "<group>"; };
+		441F54D61728DC6D0012E61B /* C4_ToolbarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_ToolbarIcon@2x.png"; path = "Logos/C4_ToolbarIcon@2x.png"; sourceTree = "<group>"; };
+		441F54DD1728DC6D0012E61B /* GryphonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GryphonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		441F54DE1728DC6D0012E61B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		441F54E61728DC6D0012E61B /* GryphonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GryphonTests-Info.plist"; sourceTree = "<group>"; };
+		441F54E81728DC6D0012E61B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		441F54EA1728DC6D0012E61B /* GryphonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GryphonTests.h; sourceTree = "<group>"; };
+		441F54EB1728DC6D0012E61B /* GryphonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GryphonTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		441F54581728DC6B0012E61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441F545F1728DC6B0012E61B /* Accelerate.framework in Frameworks */,
+				441F54611728DC6B0012E61B /* AVFoundation.framework in Frameworks */,
+				441F54631728DC6B0012E61B /* CoreFoundation.framework in Frameworks */,
+				441F54651728DC6B0012E61B /* CoreGraphics.framework in Frameworks */,
+				441F54671728DC6B0012E61B /* CoreImage.framework in Frameworks */,
+				441F54691728DC6B0012E61B /* CoreMedia.framework in Frameworks */,
+				441F546B1728DC6B0012E61B /* CoreText.framework in Frameworks */,
+				441F546D1728DC6B0012E61B /* Foundation.framework in Frameworks */,
+				441F546F1728DC6B0012E61B /* OpenGLES.framework in Frameworks */,
+				441F54711728DC6B0012E61B /* QuartzCore.framework in Frameworks */,
+				441F54731728DC6B0012E61B /* UIKit.framework in Frameworks */,
+				441F54A81728DC6C0012E61B /* libC4.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441F54D91728DC6D0012E61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441F54DF1728DC6D0012E61B /* SenTestingKit.framework in Frameworks */,
+				441F54E01728DC6D0012E61B /* UIKit.framework in Frameworks */,
+				441F54E11728DC6D0012E61B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		441F54521728DC6B0012E61B = {
+			isa = PBXGroup;
+			children = (
+				441F54741728DC6B0012E61B /* Gryphon */,
+				441F54E41728DC6D0012E61B /* GryphonTests */,
+				441F545D1728DC6B0012E61B /* Frameworks */,
+				441F545C1728DC6B0012E61B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		441F545C1728DC6B0012E61B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				441F545B1728DC6B0012E61B /* Gryphon.app */,
+				441F54DD1728DC6D0012E61B /* GryphonTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		441F545D1728DC6B0012E61B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				441F545E1728DC6B0012E61B /* Accelerate.framework */,
+				441F54601728DC6B0012E61B /* AVFoundation.framework */,
+				441F54621728DC6B0012E61B /* CoreFoundation.framework */,
+				441F54641728DC6B0012E61B /* CoreGraphics.framework */,
+				441F54661728DC6B0012E61B /* CoreImage.framework */,
+				441F54681728DC6B0012E61B /* CoreMedia.framework */,
+				441F546A1728DC6B0012E61B /* CoreText.framework */,
+				441F546C1728DC6B0012E61B /* Foundation.framework */,
+				441F546E1728DC6B0012E61B /* OpenGLES.framework */,
+				441F54701728DC6B0012E61B /* QuartzCore.framework */,
+				441F54721728DC6B0012E61B /* UIKit.framework */,
+				441F54DE1728DC6D0012E61B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		441F54741728DC6B0012E61B /* Gryphon */ = {
+			isa = PBXGroup;
+			children = (
+				441F54811728DC6B0012E61B /* C4WorkSpace.m */,
+				441F54831728DC6C0012E61B /* Framework */,
+				441F54A91728DC6C0012E61B /* Media */,
+				441F54B21728DC6D0012E61B /* Logos */,
+				441F54751728DC6B0012E61B /* Supporting Files */,
+			);
+			path = Gryphon;
+			sourceTree = "<group>";
+		};
+		441F54751728DC6B0012E61B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				441F54761728DC6B0012E61B /* Gryphon-Info.plist */,
+				441F54771728DC6B0012E61B /* InfoPlist.strings */,
+				441F547A1728DC6B0012E61B /* main.m */,
+				441F547C1728DC6B0012E61B /* Gryphon-Prefix.pch */,
+				441F547D1728DC6B0012E61B /* C4WorkSpace.h */,
+				441F547E1728DC6B0012E61B /* C4AppDelegate.h */,
+				441F547F1728DC6B0012E61B /* C4AppDelegate.m */,
+				441F54B51728DC6D0012E61B /* C4Canvas.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		441F54831728DC6C0012E61B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				441F54841728DC6C0012E61B /* C4AddSubview.h */,
+				441F54851728DC6C0012E61B /* C4AssertionHandler.h */,
+				441F54861728DC6C0012E61B /* C4Camera.h */,
+				441F54871728DC6C0012E61B /* C4CameraController.h */,
+				441F54881728DC6C0012E61B /* C4CanvasController.h */,
+				441F54891728DC6C0012E61B /* C4CaptureVideoPreviewLayer.h */,
+				441F548A1728DC6C0012E61B /* C4Control.h */,
+				441F548B1728DC6C0012E61B /* C4Defines.h */,
+				441F548C1728DC6C0012E61B /* C4EAGLES1Renderer.h */,
+				441F548D1728DC6C0012E61B /* C4EAGLESRenderer.h */,
+				441F548E1728DC6C0012E61B /* C4EAGLLayer.h */,
+				441F548F1728DC6C0012E61B /* C4Font.h */,
+				441F54901728DC6C0012E61B /* C4Foundation.h */,
+				441F54911728DC6C0012E61B /* C4Gesture.h */,
+				441F54921728DC6C0012E61B /* C4GL.h */,
+				441F54931728DC6C0012E61B /* C4GL1Renderer.h */,
+				441F54941728DC6C0012E61B /* C4Image.h */,
+				441F54951728DC6C0012E61B /* C4Label.h */,
+				441F54961728DC6C0012E61B /* C4Layer.h */,
+				441F54971728DC6C0012E61B /* C4LayerAnimation.h */,
+				441F54981728DC6C0012E61B /* C4Math.h */,
+				441F54991728DC6C0012E61B /* C4MethodDelay.h */,
+				441F549A1728DC6C0012E61B /* C4Movie.h */,
+				441F549B1728DC6C0012E61B /* C4Notification.h */,
+				441F549C1728DC6C0012E61B /* C4Object.h */,
+				441F549D1728DC6C0012E61B /* C4PlayerLayer.h */,
+				441F549E1728DC6C0012E61B /* C4Sample.h */,
+				441F549F1728DC6C0012E61B /* C4Shape.h */,
+				441F54A01728DC6C0012E61B /* C4ShapeLayer.h */,
+				441F54A11728DC6C0012E61B /* C4Timer.h */,
+				441F54A21728DC6C0012E61B /* C4Vector.h */,
+				441F54A31728DC6C0012E61B /* C4View.h */,
+				441F54A41728DC6C0012E61B /* C4ViewController.h */,
+				441F54A51728DC6C0012E61B /* C4Window.h */,
+				441F54A61728DC6C0012E61B /* UITouch+C4Touch.h */,
+				441F54A71728DC6C0012E61B /* libC4.a */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		441F54A91728DC6C0012E61B /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				441F54AA1728DC6C0012E61B /* C4Loop.aif */,
+				441F54AC1728DC6C0012E61B /* C4Sky.png */,
+				441F54AE1728DC6C0012E61B /* C4Table.png */,
+				441F54B01728DC6D0012E61B /* inception.mov */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		441F54B21728DC6D0012E61B /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				441F54B31728DC6D0012E61B /* iTunesArtwork.png */,
+				441F54B81728DC6D0012E61B /* C4_AppIcon_iPad.png */,
+				441F54BA1728DC6D0012E61B /* C4_AppIcon_iPad@2x.png */,
+				441F54BC1728DC6D0012E61B /* C4_AppStoreIcon.png */,
+				441F54BE1728DC6D0012E61B /* C4_AppStoreIcon@2x.png */,
+				441F54C01728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape.png */,
+				441F54C21728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape@2x.png */,
+				441F54C41728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait.png */,
+				441F54C61728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait@2x.png */,
+				441F54C81728DC6D0012E61B /* C4_SpotlightIcon.png */,
+				441F54CA1728DC6D0012E61B /* C4_SpotlightIcon@2x.png */,
+				441F54CC1728DC6D0012E61B /* C4_SpotlightIcon_iPad.png */,
+				441F54CE1728DC6D0012E61B /* C4_SpotlightIcon_iPad@2x.png */,
+				441F54D01728DC6D0012E61B /* C4_TabbarIcon.png */,
+				441F54D21728DC6D0012E61B /* C4_TabbarIcon@2x.png */,
+				441F54D41728DC6D0012E61B /* C4_ToolbarIcon.png */,
+				441F54D61728DC6D0012E61B /* C4_ToolbarIcon@2x.png */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		441F54E41728DC6D0012E61B /* GryphonTests */ = {
+			isa = PBXGroup;
+			children = (
+				441F54EA1728DC6D0012E61B /* GryphonTests.h */,
+				441F54EB1728DC6D0012E61B /* GryphonTests.m */,
+				441F54E51728DC6D0012E61B /* Supporting Files */,
+			);
+			path = GryphonTests;
+			sourceTree = "<group>";
+		};
+		441F54E51728DC6D0012E61B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				441F54E61728DC6D0012E61B /* GryphonTests-Info.plist */,
+				441F54E71728DC6D0012E61B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		441F545A1728DC6B0012E61B /* Gryphon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441F54EF1728DC6D0012E61B /* Build configuration list for PBXNativeTarget "Gryphon" */;
+			buildPhases = (
+				441F54571728DC6B0012E61B /* Sources */,
+				441F54581728DC6B0012E61B /* Frameworks */,
+				441F54591728DC6B0012E61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gryphon;
+			productName = Gryphon;
+			productReference = 441F545B1728DC6B0012E61B /* Gryphon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		441F54DC1728DC6D0012E61B /* GryphonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441F54F21728DC6D0012E61B /* Build configuration list for PBXNativeTarget "GryphonTests" */;
+			buildPhases = (
+				441F54D81728DC6D0012E61B /* Sources */,
+				441F54D91728DC6D0012E61B /* Frameworks */,
+				441F54DA1728DC6D0012E61B /* Resources */,
+				441F54DB1728DC6D0012E61B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				441F54E31728DC6D0012E61B /* PBXTargetDependency */,
+			);
+			name = GryphonTests;
+			productName = GryphonTests;
+			productReference = 441F54DD1728DC6D0012E61B /* GryphonTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		441F54531728DC6B0012E61B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bardia Doust";
+			};
+			buildConfigurationList = 441F54561728DC6B0012E61B /* Build configuration list for PBXProject "Gryphon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 441F54521728DC6B0012E61B;
+			productRefGroup = 441F545C1728DC6B0012E61B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				441F545A1728DC6B0012E61B /* Gryphon */,
+				441F54DC1728DC6D0012E61B /* GryphonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		441F54591728DC6B0012E61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441F54791728DC6B0012E61B /* InfoPlist.strings in Resources */,
+				441F54AB1728DC6C0012E61B /* C4Loop.aif in Resources */,
+				441F54AD1728DC6C0012E61B /* C4Sky.png in Resources */,
+				441F54AF1728DC6C0012E61B /* C4Table.png in Resources */,
+				441F54B11728DC6D0012E61B /* inception.mov in Resources */,
+				441F54B41728DC6D0012E61B /* iTunesArtwork.png in Resources */,
+				441F54B71728DC6D0012E61B /* C4Canvas.xib in Resources */,
+				441F54B91728DC6D0012E61B /* C4_AppIcon_iPad.png in Resources */,
+				441F54BB1728DC6D0012E61B /* C4_AppIcon_iPad@2x.png in Resources */,
+				441F54BD1728DC6D0012E61B /* C4_AppStoreIcon.png in Resources */,
+				441F54BF1728DC6D0012E61B /* C4_AppStoreIcon@2x.png in Resources */,
+				441F54C11728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape.png in Resources */,
+				441F54C31728DC6D0012E61B /* C4_LaunchImage_iPad-Landscape@2x.png in Resources */,
+				441F54C51728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait.png in Resources */,
+				441F54C71728DC6D0012E61B /* C4_LaunchImage_iPad-Portrait@2x.png in Resources */,
+				441F54C91728DC6D0012E61B /* C4_SpotlightIcon.png in Resources */,
+				441F54CB1728DC6D0012E61B /* C4_SpotlightIcon@2x.png in Resources */,
+				441F54CD1728DC6D0012E61B /* C4_SpotlightIcon_iPad.png in Resources */,
+				441F54CF1728DC6D0012E61B /* C4_SpotlightIcon_iPad@2x.png in Resources */,
+				441F54D11728DC6D0012E61B /* C4_TabbarIcon.png in Resources */,
+				441F54D31728DC6D0012E61B /* C4_TabbarIcon@2x.png in Resources */,
+				441F54D51728DC6D0012E61B /* C4_ToolbarIcon.png in Resources */,
+				441F54D71728DC6D0012E61B /* C4_ToolbarIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441F54DA1728DC6D0012E61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441F54E91728DC6D0012E61B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		441F54DB1728DC6D0012E61B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		441F54571728DC6B0012E61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441F547B1728DC6B0012E61B /* main.m in Sources */,
+				441F54801728DC6B0012E61B /* C4AppDelegate.m in Sources */,
+				441F54821728DC6B0012E61B /* C4WorkSpace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441F54D81728DC6D0012E61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441F54EC1728DC6D0012E61B /* GryphonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		441F54E31728DC6D0012E61B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 441F545A1728DC6B0012E61B /* Gryphon */;
+			targetProxy = 441F54E21728DC6D0012E61B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		441F54771728DC6B0012E61B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				441F54781728DC6B0012E61B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		441F54B51728DC6D0012E61B /* C4Canvas.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				441F54B61728DC6D0012E61B /* en */,
+			);
+			name = C4Canvas.xib;
+			sourceTree = "<group>";
+		};
+		441F54E71728DC6D0012E61B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				441F54E81728DC6D0012E61B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		441F54ED1728DC6D0012E61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		441F54EE1728DC6D0012E61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		441F54F01728DC6D0012E61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gryphon/Gryphon-Prefix.pch";
+				INFOPLIST_FILE = "Gryphon/Gryphon-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Gryphon/Library\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		441F54F11728DC6D0012E61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gryphon/Gryphon-Prefix.pch";
+				INFOPLIST_FILE = "Gryphon/Gryphon-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Gryphon/Library\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		441F54F31728DC6D0012E61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gryphon.app/Gryphon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gryphon/Gryphon-Prefix.pch";
+				INFOPLIST_FILE = "GryphonTests/GryphonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		441F54F41728DC6D0012E61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gryphon.app/Gryphon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gryphon/Gryphon-Prefix.pch";
+				INFOPLIST_FILE = "GryphonTests/GryphonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		441F54561728DC6B0012E61B /* Build configuration list for PBXProject "Gryphon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441F54ED1728DC6D0012E61B /* Debug */,
+				441F54EE1728DC6D0012E61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		441F54EF1728DC6D0012E61B /* Build configuration list for PBXNativeTarget "Gryphon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441F54F01728DC6D0012E61B /* Debug */,
+				441F54F11728DC6D0012E61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		441F54F21728DC6D0012E61B /* Build configuration list for PBXNativeTarget "GryphonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441F54F31728DC6D0012E61B /* Debug */,
+				441F54F41728DC6D0012E61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 441F54531728DC6B0012E61B /* Project object */;
+}
