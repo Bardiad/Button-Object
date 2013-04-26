@@ -8,26 +8,24 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Gryphon/ColorButton.m"
-         timestampString = "388612921.565088"
+         timestampString = "388692855.051239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "41"
-         endingLineNumber = "41"
-         landmarkName = "-initWithColor:"
-         landmarkType = "5">
+         startingLineNumber = "65"
+         endingLineNumber = "65"
+         landmarkName = "@implementation ColorButton"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Gryphon/C4WorkSpace.m"
-         timestampString = "388612834.414262"
+         filePath = "Gryphon/main.m"
+         timestampString = "388625731.264311"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "15"
-         endingLineNumber = "15"
-         landmarkName = "-setup"
-         landmarkType = "5">
+         startingLineNumber = "9"
+         endingLineNumber = "9">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

@@ -13,8 +13,12 @@
 @property UIColor *color;
 @property C4Shape *shape;
 
-//-(void)sendData;
 
--(id)initWithColor:(UIColor *)Tcolor;
+-(id)initWithColor:(UIColor *)bgColor atX:(float)xValue atY:(float)yValue;
+
+-(void)changeColorTo:(UIColor *)newColor;
+
+
+
 
 @end

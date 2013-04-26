@@ -48,9 +48,7 @@
 		441F54DF1728DC6D0012E61B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54DE1728DC6D0012E61B /* SenTestingKit.framework */; };
 		441F54E01728DC6D0012E61B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F54721728DC6B0012E61B /* UIKit.framework */; };
 		441F54E11728DC6D0012E61B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441F546C1728DC6B0012E61B /* Foundation.framework */; };
-		441F54E91728DC6D0012E61B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 441F54E71728DC6D0012E61B /* InfoPlist.strings */; };
-		441F54EC1728DC6D0012E61B /* GryphonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F54EB1728DC6D0012E61B /* GryphonTests.m */; };
-		441F54F71728DD2E0012E61B /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F54F61728DD2E0012E61B /* ColorButton.m */; };
+		44397DED172A0DA20078C66D /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44397DEC172A0DA20078C66D /* ColorButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,12 +142,8 @@
 		441F54D61728DC6D0012E61B /* C4_ToolbarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C4_ToolbarIcon@2x.png"; path = "Logos/C4_ToolbarIcon@2x.png"; sourceTree = "<group>"; };
 		441F54DD1728DC6D0012E61B /* GryphonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GryphonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		441F54DE1728DC6D0012E61B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		441F54E61728DC6D0012E61B /* GryphonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GryphonTests-Info.plist"; sourceTree = "<group>"; };
-		441F54E81728DC6D0012E61B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		441F54EA1728DC6D0012E61B /* GryphonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GryphonTests.h; sourceTree = "<group>"; };
-		441F54EB1728DC6D0012E61B /* GryphonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GryphonTests.m; sourceTree = "<group>"; };
-		441F54F51728DD2E0012E61B /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
-		441F54F61728DD2E0012E61B /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
+		44397DEB172A0DA20078C66D /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
+		44397DEC172A0DA20078C66D /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				441F54741728DC6B0012E61B /* Gryphon */,
-				441F54E41728DC6D0012E61B /* GryphonTests */,
 				441F545D1728DC6B0012E61B /* Frameworks */,
 				441F545C1728DC6B0012E61B /* Products */,
 			);
@@ -226,9 +219,9 @@
 		441F54741728DC6B0012E61B /* Gryphon */ = {
 			isa = PBXGroup;
 			children = (
+				44397DEB172A0DA20078C66D /* ColorButton.h */,
+				44397DEC172A0DA20078C66D /* ColorButton.m */,
 				441F54811728DC6B0012E61B /* C4WorkSpace.m */,
-				441F54F51728DD2E0012E61B /* ColorButton.h */,
-				441F54F61728DD2E0012E61B /* ColorButton.m */,
 				441F54831728DC6C0012E61B /* Framework */,
 				441F54A91728DC6C0012E61B /* Media */,
 				441F54B21728DC6D0012E61B /* Logos */,
@@ -328,25 +321,6 @@
 				441F54D61728DC6D0012E61B /* C4_ToolbarIcon@2x.png */,
 			);
 			name = Logos;
-			sourceTree = "<group>";
-		};
-		441F54E41728DC6D0012E61B /* GryphonTests */ = {
-			isa = PBXGroup;
-			children = (
-				441F54EA1728DC6D0012E61B /* GryphonTests.h */,
-				441F54EB1728DC6D0012E61B /* GryphonTests.m */,
-				441F54E51728DC6D0012E61B /* Supporting Files */,
-			);
-			path = GryphonTests;
-			sourceTree = "<group>";
-		};
-		441F54E51728DC6D0012E61B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				441F54E61728DC6D0012E61B /* GryphonTests-Info.plist */,
-				441F54E71728DC6D0012E61B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,7 +424,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441F54E91728DC6D0012E61B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +453,7 @@
 				441F547B1728DC6B0012E61B /* main.m in Sources */,
 				441F54801728DC6B0012E61B /* C4AppDelegate.m in Sources */,
 				441F54821728DC6B0012E61B /* C4WorkSpace.m in Sources */,
-				441F54F71728DD2E0012E61B /* ColorButton.m in Sources */,
+				44397DED172A0DA20078C66D /* ColorButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +461,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441F54EC1728DC6D0012E61B /* GryphonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,14 +489,6 @@
 				441F54B61728DC6D0012E61B /* en */,
 			);
 			name = C4Canvas.xib;
-			sourceTree = "<group>";
-		};
-		441F54E71728DC6D0012E61B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				441F54E81728DC6D0012E61B /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -671,6 +635,7 @@
 				441F54F11728DC6D0012E61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		441F54F21728DC6D0012E61B /* Build configuration list for PBXNativeTarget "GryphonTests" */ = {
 			isa = XCConfigurationList;
@@ -679,6 +644,7 @@
 				441F54F41728DC6D0012E61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

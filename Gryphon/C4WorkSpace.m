@@ -9,18 +9,28 @@
 #import "C4WorkSpace.h"
 #import "ColorButton.h"
 
+@interface C4WorkSpace()
+    -(void)updateColorButtonBG;
+@end    
+
 @implementation C4WorkSpace
 
 -(void)setup {
     
-    UIColor *TColor = [UIColor yellowColor];
-    ColorButton *buttonOne = [[ColorButton alloc]initWithColor:TColor];
-    [self.canvas addShape:buttonOne.shape];
+    //Init and alloc a new instance of a ColorButton Object with x/y positions and initial color
+    ColorButton *button1 = [[ColorButton alloc]initWithColor:[UIColor greenColor] atX:50 atY:50];
+    
+    //change the bg color of ColorButton object
+    [button1 changeColorTo:[UIColor blackColor]];
     
     
-    
-    
+    //add color button
+    [self.canvas addShape:button1.shape];
+
+}
+
+-(void)updateColorButtonBG{
     
 }
-					
+
 @end
