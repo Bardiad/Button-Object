@@ -13,24 +13,58 @@
     -(void)updateColorButtonBG;
 @end    
 
-@implementation C4WorkSpace
+@implementation C4WorkSpace{
+    NSMutableArray *buttonArray;
+    NSMutableArray *colorArray;
+}
 
 -(void)setup {
     
-    //Init and alloc a new instance of a ColorButton Object with x/y positions and initial color
-    ColorButton *button1 = [[ColorButton alloc]initWithColor:[UIColor greenColor] atX:50 atY:50];
+    //Create an array with a capacity of 20 to hold buttons
+    buttonArray = [[NSMutableArray alloc]initWithCapacity:15];
     
-    //change the bg color of ColorButton object
-    [button1 changeColorTo:[UIColor blackColor]];
+    //Create another array that holds color values
+    colorArray = [[NSMutableArray alloc]initWithCapacity:15];
     
+    CGFloat colorVal = 0.1;
     
-    //add color button
-    [self.canvas addShape:button1.shape];
+    for(int i = 0 ; i < 15 ; i++){
+        
+        
+        
+        /* Set Initial Color Values in Array
+        ///////////////////////////////////*/
+        
+        //Create temp color object
+        UIColor *tempColor = [UIColor colorWithRed:0.7 green:0.3 blue:colorVal alpha:1.0];
+        
+        //add to array
+        [colorArray addObject:tempColor];
+        
+        //increment colorVal variable
+        colorVal += 0.05;
+        
+        
+        /* Populate Array with Button Objects
+        ///////////////////////////////////*/
+        
+        //Create temp object to hold button
+        ColorButton *button = [[ColorButton alloc]initWithColor:[colorArray objectAtIndex:i] atX:20+(i*40) atY:20];
+        
+        //add Button to array
+        [buttonArray addObject:button];
+        
+        //add every button in the array to the canvas
+        for (button in buttonArray){
+            [self.canvas addShape:button.shape];
+        }
+    }
+    
+    [[buttonArray objectAtIndex:1] changeColorTo:[colorArray objectAtIndex:13]];
 
 }
 
 -(void)updateColorButtonBG{
-    
 }
 
 @end
