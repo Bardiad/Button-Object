@@ -21,7 +21,7 @@
 -(void)setup {
     
     //Create an array with a capacity of 20 to hold buttons
-    buttonArray = [[NSMutableArray alloc]initWithCapacity:15];
+    buttonArray = [[NSMutableArray alloc]initWithCapacity:20];
     
     //Create another array that holds color values
     colorArray = [[NSMutableArray alloc]initWithCapacity:15];
@@ -30,29 +30,33 @@
     
     for(int i = 0 ; i < 15 ; i++){
         
-        
-        
-        /* Set Initial Color Values in Array
+        /* Set Initial Color Values in colorArray
         ///////////////////////////////////*/
         
         //Create temp color object
-        UIColor *tempColor = [UIColor colorWithRed:0.7 green:0.3 blue:colorVal alpha:1.0];
+        UIColor *tempColor = [UIColor colorWithRed:colorVal green:0.3 blue:0.5 alpha:1.0];
         
-        //add to array
+        //add UIColor to array
         [colorArray addObject:tempColor];
         
-        //increment colorVal variable
-        colorVal += 0.05;
+        //increment colorVal
+        colorVal += 0.08;
         
         
-        /* Populate Array with Button Objects
+        
+        
+        /* Populate buttonArray with button objects
         ///////////////////////////////////*/
         
+        
         //Create temp object to hold button
-        ColorButton *button = [[ColorButton alloc]initWithColor:[colorArray objectAtIndex:i] atX:20+(i*40) atY:20];
+        ColorButton *button = [[ColorButton alloc]initWithColor:[colorArray objectAtIndex:i] atX:20 atY:20+(i*40)];
+        [button setXValue:20.0f];
+        
         
         //add Button to array
         [buttonArray addObject:button];
+        
         
         //add every button in the array to the canvas
         for (button in buttonArray){
@@ -60,7 +64,13 @@
         }
     }
     
-    [[buttonArray objectAtIndex:1] changeColorTo:[colorArray objectAtIndex:13]];
+    
+    //TESTING
+    ColorButton *buttonTest = [buttonArray objectAtIndex:3];
+    NSLog(@"The xValue is %f and the yValue is %f", buttonTest.xValue, buttonTest.yValue);
+    
+    //Testing to change button color value
+    //[[buttonArray objectAtIndex:1] changeColorTo:[colorArray objectAtIndex:4]];
 
 }
 

@@ -12,11 +12,19 @@
 
 @property UIColor *color;
 @property C4Shape *shape;
+@property float xValue;
+@property float yValue;
 
 
 -(id)initWithColor:(UIColor *)bgColor atX:(float)xValue atY:(float)yValue;
 
 -(void)changeColorTo:(UIColor *)newColor;
+
+-(UIColor *)colorOfButton;
+
+-(float)locationAtX;
+
+-(float)locationAtY;
 
 
 
