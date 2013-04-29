@@ -99,4 +99,27 @@
     
 }
 
+
+
+
+
+//The following 2 methods are used just to test the updateColorButtonBG method using touch as the trigger
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+
+        UIColor *yetAnotherColor = [UIColor redColor];
+        [colorArray replaceObjectAtIndex:3 withObject:yetAnotherColor];
+        [self updateColorButtonBG];
+}
+
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
+    UIColor *Color4 = [UIColor blueColor];
+    [colorArray replaceObjectAtIndex:2 withObject:Color4];
+    [self updateColorButtonBG];
+}
+
 @end
