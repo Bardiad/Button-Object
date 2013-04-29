@@ -20,6 +20,9 @@
 
 -(void)setup {
     
+    
+
+    
     //Create an array with a capacity of 20 to hold buttons
     buttonArray = [[NSMutableArray alloc]initWithCapacity:20];
     
@@ -31,7 +34,8 @@
     for(int i = 0 ; i < 15 ; i++){
         
         /* Set Initial Color Values in colorArray
-        ///////////////////////////////////*/
+        ////////////////////////////////////////
+        //////////////////////////////////////*/
         
         //Create temp color object
         UIColor *tempColor = [UIColor colorWithRed:colorVal green:0.3 blue:0.5 alpha:1.0];
@@ -46,12 +50,16 @@
         
         
         /* Populate buttonArray with button objects
-        ///////////////////////////////////*/
-        
+        ///////////////////////////////////////////
+        /////////////////////////////////////////*/
         
         //Create temp object to hold button
-        ColorButton *button = [[ColorButton alloc]initWithColor:[colorArray objectAtIndex:i] atX:20 atY:20+(i*40)];
+        
+        int width = self.canvas.width;
+        ColorButton *button = [[ColorButton alloc]initWithColor:[colorArray objectAtIndex:i] atX:20+(0.2f*width)*i atY:20];
         [button setXValue:20.0f];
+        
+
         
         
         //add Button to array
@@ -68,13 +76,27 @@
     //TESTING
     ColorButton *buttonTest = [buttonArray objectAtIndex:3];
     NSLog(@"The xValue is %f and the yValue is %f", buttonTest.xValue, buttonTest.yValue);
+    float tester = [buttonTest locationAtY];
+    
+    NSLog(@"The value is still %f", tester);
+    
+    
     
     //Testing to change button color value
-    //[[buttonArray objectAtIndex:1] changeColorTo:[colorArray objectAtIndex:4]];
-
+    UIColor *anotherColor = [UIColor greenColor];
+    [colorArray replaceObjectAtIndex:1 withObject:anotherColor];
+    [self updateColorButtonBG];
+    
 }
 
 -(void)updateColorButtonBG{
+    for (int i = 0 ; i < 15 ; i++){
+        [[buttonArray objectAtIndex:i] changeColorTo:[colorArray objectAtIndex:i]];
+        ColorButton *button = [buttonArray objectAtIndex:i];
+        NSLog(@"in ColorButton Update Method");
+        [self.canvas addShape:button.shape];
+    }
+    
 }
 
 @end

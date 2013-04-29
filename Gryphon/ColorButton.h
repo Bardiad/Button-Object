@@ -16,7 +16,7 @@
 @property float yValue;
 
 
--(id)initWithColor:(UIColor *)bgColor atX:(float)xValue atY:(float)yValue;
+-(id)initWithColor:(UIColor *)bgColor atX:(float)_xValue atY:(float)_yValue;
 
 -(void)changeColorTo:(UIColor *)newColor;
 
