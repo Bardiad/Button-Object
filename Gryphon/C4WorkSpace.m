@@ -27,11 +27,11 @@
     buttonArray = [[NSMutableArray alloc]initWithCapacity:20];
     
     //Create another array that holds color values
-    colorArray = [[NSMutableArray alloc]initWithCapacity:15];
+    colorArray = [[NSMutableArray alloc]initWithCapacity:20];
     
     CGFloat colorVal = 0.1;
     
-    for(int i = 0 ; i < 15 ; i++){
+    for(int i = 0 ; i < 20 ; i++){
         
         /* Set Initial Color Values in colorArray
         ////////////////////////////////////////
@@ -53,11 +53,10 @@
         ///////////////////////////////////////////
         /////////////////////////////////////////*/
         
-        //Create temp object to hold button
+        //Create object to hold button, color value assigned from array & position set
         
         int width = self.canvas.width;
         ColorButton *button = [[ColorButton alloc]initWithColor:[colorArray objectAtIndex:i] atX:20+(0.2f*width)*i atY:20];
-        [button setXValue:20.0f];
         
 
         
@@ -89,11 +88,12 @@
     
 }
 
+
+
 -(void)updateColorButtonBG{
-    for (int i = 0 ; i < 15 ; i++){
+    for (int i = 0 ; i < [buttonArray count] ; i++){
         [[buttonArray objectAtIndex:i] changeColorTo:[colorArray objectAtIndex:i]];
         ColorButton *button = [buttonArray objectAtIndex:i];
-        NSLog(@"in ColorButton Update Method");
         [self.canvas addShape:button.shape];
     }
     

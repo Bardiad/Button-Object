@@ -11,9 +11,12 @@
 
 @implementation ColorButton
 
+@synthesize xValue = _xValue;
+@synthesize yValue = _yValue;
+
 
 //Custom Init method to set a color and position values for button
--(id)initWithColor:(UIColor *)bgColor atX:(float)_xValue atY:(float)_yValue{
+-(id)initWithColor:(UIColor *)color atX:(float)_xValue atY:(float)_yValue{
     
     //Create CGRect frame that will set dimensions for button
     CGRect frame = CGRectMake(_xValue, _yValue, 100, 100);
@@ -22,8 +25,9 @@
     _shape = [C4Shape rect:frame];
     
     //set color to passed value
-    _shape.fillColor = bgColor;
+    _shape.fillColor = color;
     _shape.lineWidth = 0.0f;
+    
     
     //return object
     return self;
