@@ -8,7 +8,11 @@
 
 #import "C4Control.h"
 
-@interface ColorButton : C4Control
+@interface ColorButton : C4Control{
+    float _yvalue;
+    float _xValue;
+    
+}
 
 @property UIColor *color;
 @property C4Shape *shape;
@@ -21,11 +25,6 @@
 -(void)changeColorTo:(UIColor *)newColor;
 
 -(UIColor *)colorOfButton;
-
--(float)locationAtX;
-
--(float)locationAtY;
-
 
 
 

@@ -55,30 +55,6 @@
 
 
 
-//Method that returns objects xValue (x-position)
--(float)locationAtX{
-    if(self){
-        return _xValue;
-    }
-    else{
-        return 20.0f;
-    }
-}
-
-
-//Method that returns objects xValue (y-position)
--(float)locationAtY{
-    if(self){
-        return _yValue;
-    }
-    else{
-        return 20.0f;
-    }
-}
-
-
-
-
 /*
  // Only override drawRect: if you perform custom drawing.
  // An empty implementation adversely affects performance during animation.
