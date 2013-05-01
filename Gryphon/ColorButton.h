@@ -9,8 +9,7 @@
 #import "C4Control.h"
 
 @interface ColorButton : C4Control{
-    float _yvalue;
-    float _xValue;
+
     
 }
 
@@ -25,6 +24,10 @@
 -(void)changeColorTo:(UIColor *)newColor;
 
 -(UIColor *)colorOfButton;
+
+-(void)printTest;
+
+-(void)testMethod;
 
 
 
